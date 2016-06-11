@@ -23,6 +23,7 @@ public class MaxSubsequence {
 		return max;
 	}
 	
+	//Çî¾Ù
 	public static int maxSubsquence2(int[] A) {
 		int len = A.length;
 		int max = A[0];

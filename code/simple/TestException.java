@@ -12,7 +12,7 @@ public class TestException {
 	public static void main(String[] args) {
 		int r = -1;
 		try {
-			r = 1 / 0;
+			r = 1 / 10;
 			r = 1; // 前面的语句异常了不会继续执行
 		} catch (Exception e) {
 			// 在捕获到异常的时候处理，catch可以有多个
@@ -24,7 +24,10 @@ public class TestException {
 		}
 		// 如果前面异常被捕获处理了，则可以执行下面的语句，否则程序终止
 		System.out.println("\nok, r is " + r);
-		print(-1);
+		print(1);
+		if(Integer.class != int.class) {
+			System.out.println("ok");
+		}
 	}
 	
 	private static void print(int a) {
